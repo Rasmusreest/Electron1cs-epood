@@ -1,0 +1,301 @@
+html,
+body {
+  min-height: 700px;
+  background: rgb(4, 30, 43); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(4, 30, 43, 1) 0%,
+    rgba(64, 120, 134, 1) 41%,
+    rgba(212, 219, 219, 1) 69%,
+    rgba(0, 0, 0, 1) 69%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(4, 30, 43, 1) 0%,
+    rgba(64, 120, 134, 1) 41%,
+    rgba(212, 219, 219, 1) 69%,
+    rgba(0, 0, 0, 1) 69%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 30, 43, 1) 0%,
+    rgba(64, 120, 134, 1) 41%,
+    rgba(212, 219, 219, 1) 69%,
+    rgba(0, 0, 0, 1) 69%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041e2b', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  font-family: "Freckle Face", cursive;
+}
+
+#foreground {
+  height: 600px;
+  position: absolute;
+  margin-top: -200px;
+  overflow-y: hidden;
+}
+
+.moon {
+  left: 25%;
+  position: absolute;
+  top: 100px;
+}
+
+.horseman {
+  width: 184px;
+  height: 123px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/horse-hallow5.svg");
+  animation: horsemove 0.7s steps(15) infinite;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 300px;
+}
+
+.pumpkin {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 300px;
+}
+
+.ground {
+  width: 151%;
+  height: 697px;
+  position: absolute;
+  background-size: 800px 716px;
+  left: 0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.front {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/hallowfront4.svg")
+    repeat-x;
+  background-size: 1000px 871px;
+  top: -100px;
+  animation: bk 20s -5s linear infinite;
+}
+
+.frontmid {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/hallowmidfront2.svg")
+    repeat-x;
+  background-size: 1000px 871px;
+  top: -100px;
+  animation: bk 50s -5s linear infinite;
+}
+
+.mid {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/hallowmid2.svg")
+    repeat-x;
+  background-size: 1000px 871px;
+  top: -100px;
+  animation: bk 100s -5s linear infinite;
+}
+
+.back {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/hallowback2.svg")
+    repeat-x;
+  background-size: 1000px 871px;
+  top: -100px;
+  animation: bk 100s -5s linear infinite;
+}
+
+@keyframes horsemove {
+  100% {
+    background-position: 0 -1848px;
+  }
+}
+
+@keyframes bk {
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.topnav-u {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav-u:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.topnav-u a {
+  float: left;
+  color: #888888;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.topnav-u a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav-u a.active {
+  background-color: black;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+}
+
+.topnav-centered-u a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right-u {
+  float: right;
+}
+
+h1 {
+  font-size: 900%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10%;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.uudised__pealkiri {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: black;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: grid;
+}
+
+.halloween__tekst {
+  font-size: 30px;
+  margin: 0 50px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.button2 {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: rgb(140, 196, 12);
+  color: rgb(255, 255, 255);
+  border: 2px solid #4caf50;
+}
+
+.button3:hover {
+  background-color: #105e13;
+  color: white;
+}
+
+.button4 {
+  background-color: #0196fa;
+  color: rgb(255, 255, 255);
+  border: 2px solid #008cba;
+}
+
+.button4:hover {
+  background-color: rgb(27, 6, 221);
+  color: white;
+}
