@@ -172,7 +172,7 @@ p {
   cursor: pointer;
   width: 100%;
   position: absolute;
-  margin-top: 150%;
+  bottom: 0;
 }
 
 button:hover {
@@ -1361,6 +1361,7 @@ footer {
   text-align: center;
   margin-top: 20%;
   font-size: 20px;
+  bottom: 0;
 }
 
 .white-footer {
@@ -1473,17 +1474,6 @@ footer {
   background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
 }
 
-.like-btn {
-  position: absolute;
-  top: 9px;
-  left: 15px;
-  background: url("twitter-heart.png");
-  width: 60px;
-  height: 60px;
-  background-size: 2900%;
-  background-repeat: no-repeat;
-}
-
 .is-active {
   animation-name: animate;
   animation-duration: 0.8s;
@@ -1533,7 +1523,9 @@ footer {
 .quantity {
   padding-top: 20px;
   margin-right: 60px;
+  display: flex;
 }
+
 .quantity input {
   -webkit-appearance: none;
   border: none;
@@ -1545,18 +1537,11 @@ footer {
 }
 
 button[class*="btn"] {
-  width: 30px;
   height: 30px;
-  background-color: #e1e8ee;
+  background-color: #000000;
   border-radius: 6px;
   border: none;
   cursor: pointer;
-}
-.minus-btn img {
-  margin-bottom: 3px;
-}
-.plus-btn img {
-  margin-top: 2px;
 }
 
 button:focus,
@@ -1603,6 +1588,122 @@ input:focus {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: grey;
+  background-color: rgb(77, 77, 77);
   font-family: "Roboto", sans-serif;
+}
+
+.firma-tekst {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  padding: 20px 20%;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#firma-pilt {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.cart svg {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+.cart svg:hover {
+  fill: #0196fa;
+}
+
+.blackcart svg {
+  fill: black;
+  width: 50px;
+  height: 50px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.blackcart svg:hover {
+  fill: #0196fa;
+}
+
+.plus-btn,
+.minus-btn {
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info__left {
+  background-color: #9d9fa0;
+  width: 50%;
+  padding-top: 170px;
+  font-size: 22px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.contact-info__right {
+  width: 50%;
+}
+
+table {
+  margin: 0 auto;
+  line-height: 160%;
+}
+
+iframe {
+  height: 450px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #0196fa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f5a81;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.SAADA_JA_CLAIMER {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-start: 1fr;
+  grid-column-start: 1fr;
+}
+
+#CLAIMER {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.saada__kiri {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px 25%;
 }
