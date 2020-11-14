@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-pood</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries-kontakt.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@600&family=Orbitron:wght@900&display=swap"
       rel="stylesheet"
@@ -21,23 +22,42 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="queries-kontakt.css">
+    <link rel="stylesheet" href="queries-index.css">
+    <script src="https://kit.fontawesome.com/d276489a55.js" crossorigin="anonymous"></script>
   </head>
-  <div class="topnav-u">
-    <!-- Centered link -->
-    <div class="topnav-centered-u">
+  <div class="topnav">
+    <div class="topnav-centered">
       <a href="index.html" class="active" style="font-size: 50px">EL1X</a>
     </div>
 
-    <!-- Left-aligned links (default) -->
     <a href="uudised.html">UUDISED</a>
     <a href="meist.html">MEIST</a>
 
-    <!-- Right-aligned links -->
     <div class="topnav-right">
       <a href="tooted.html">TOOTED</a>
-      <a href="kontakt.html">KONTAKT</a>
+      <a href="kontakt.html">KONTAT</a>
     </div>
-  </div>
+</div>
+</div>
+<nav>
+<div class="topnav2">
+<input id="hamburger" type="checkbox" class="hamburger" />
+<label class ="hamburger-icon" for="hamburger">
+    <div class="blackline upper-line"></div>
+    <div class="blackline middle-line"></div>
+    <div class="blackline lower-line"></div>
+</label>
+<ul>
+  <li><a href="index.html" class="black">AVALEHT</a></li>
+  <li><a href="uudised.html" class="black">UUDISED</a></li>
+  <li><a href="meist.html" class="black">MEIST</a></li>
+  <li><a href="tooted.html" class="black">TOOTED</a></li>
+  <li><a href="kontakt.html" class="black">KONTAKT</a></li>
+</li></a>
+</ul>
+</div>
+</nav>
 
   <body>
     <h1 class="tooted__pealkiri">KONTAKT</h1>
@@ -48,8 +68,8 @@
             <div class="contact-info__left">
                 <table>
                     <tr>
-                        <td>Aadress:</td>
-                        <td>Mount Elizabeth Medical Centre 3 Mount Elizabeth #12-06 228510, Singapore</td>
+                        <td>Aadress: </td>
+                        <td>Mount Elizabeth Medical Centre 3 228510, Singapore</td>
                     </tr>
                     <tr>
                         <td>Telefon:</td>
@@ -78,16 +98,16 @@
     <div class="saada__kiri">
             <form action="action_page.php">
       
-                <label for="fname">Eesnimi</label>
+                <label for="fname" class="saada__kiri__pealkiri">Eesnimi</label>
                 <input type="text" id="fname" name="firstname" placeholder="Sinu eesnimi...">
             
-                <label for="lname">Perekonnanimi</label>
+                <label for="lname" class="saada__kiri__pealkiri">Perekonnanimi</label>
                 <input type="text" id="lname" name="lastname" placeholder="Sinu perekonnanimi...">
       
-                <label for="email">E-mail</label>
+                <label for="email" class="saada__kiri__pealkiri">E-mail</label>
                 <input type="text" id="email" name="email" placeholder="Sinu e-mail...">
       
-                <label for="subject">Teema</label>
+                <label for="subject" class="saada__kiri__pealkiri">Teema</label>
                 <textarea id="subject" name="subject" placeholder="Kirjuta midagi..." style="height:200px"></textarea>
                   <div class="SAADA_JA_CLAIMER">     
                 <input type="submit" value="Saada">
@@ -96,5 +116,20 @@
             </div>
 
     </main>
+    <div class="social-icons">
+      <a href="#!">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="#!">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="#!">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="#!">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+  </div>
   <footer>&copy; by Rasmus Reest 2020</footer>
 </html>

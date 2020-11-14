@@ -1,0 +1,19 @@
+@media only screen and (max-width: 500px) {
+  .blackcart {
+    width: 100%;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  .firma-tekst {
+    margin-top: 20%;
+  }
+
+  #firma-pilt {
+    width: 80vw;
+    margin: auto;
+  }
+}

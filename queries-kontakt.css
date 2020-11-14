@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1800px) {
+  .saada__kiri__pealkiri {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info__right,
+  .contact-info__left {
+    width: 100%;
+  }
+
+  .contact-info__left {
+    padding: 20px;
+  }
+
+  .saada__kiri__pealkiri {
+    font-size: 20px;
+  }
+  .saada__kiri {
+    width: 100%;
+    padding: 30px 10px;
+    margin: 20px 0;
+  }
+
+  #CLAIMER {
+    font-size: 12px;
+    text-align: left;
+  }
+}

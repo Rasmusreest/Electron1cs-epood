@@ -1,0 +1,87 @@
+@media only screen and (max-width: 500px) {
+  .text1,
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .topnav {
+    display: none;
+  }
+
+  .topnav-u {
+    display: none;
+  }
+
+  h1 {
+    margin-top: 20vh;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .hamburger {
+    display: block;
+    opacity: 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+    color: white;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .line {
+    transition: all 0.2s;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .line {
+    transition: all 0.2s;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .upper-line {
+    transform: rotate(45deg) translate(7px, 6px);
+  }
+
+  .hamburger:checked ~ .hamburger-icon .middle-line {
+    opacity: 0;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .lower-line {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* FRONT PAGE */
+
+  main div label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 595px) {
+  nav ul li a {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1215px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  #Halloween-sale {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+  }
+
+  .halloween__tekst {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .button2,
+  .button3,
+  .button4 {
+    width: 35vw;
+    display: flex;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .halloween__tekst {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .button2,
+  .button3,
+  .button4 {
+    width: 30vw;
+    display: flex;
+  }
+
+  #Halloween-sale {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+}

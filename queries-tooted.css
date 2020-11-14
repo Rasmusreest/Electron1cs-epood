@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1500px) {
+  .dropdown {
+    width: 100%;
+    margin: auto;
+  }
+
+  .dropdown-content {
+    font-size: 15px;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  .tooted {
+    width: 100%;
+    margin: 0;
+    justify-content: left;
+  }
+
+  .toote__kast {
+    width: 30vw;
+    padding: 0;
+    margin-right: 8vw;
+    margin-left: 10%;
+    height: 80vh;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .blackcart {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    display: none;
+    left: 40%;
+    text-align: center;
+  }
+
+  .dropbtn {
+    display: block;
+    margin: 30px auto;
+  }
+
+  .toote__kast {
+    width: 40vw;
+    padding: 0;
+    height: 95vh;
+  }
+
+  .tooted {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .toote__kast {
+    width: 55vw;
+    padding: 0;
+    height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .toote__kast {
+    width: 70vw;
+    padding: 0;
+    height: 90vh;
+  }
+}
