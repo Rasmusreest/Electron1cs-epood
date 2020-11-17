@@ -1,3 +1,9 @@
+@media only screen and (max-width: 700px) {
+  #firma-pilt {
+    width: 70vw;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .blackcart {
     width: 100%;
@@ -15,5 +21,6 @@
   #firma-pilt {
     width: 80vw;
     margin: auto;
+    object-fit: cover;
   }
 }

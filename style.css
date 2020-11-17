@@ -115,6 +115,12 @@
   color: white;
 }
 
+.topnav-u .active-page {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+}
+
 .line {
   height: 4px;
   width: 100%;
@@ -661,6 +667,7 @@ p {
 #toode1 {
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 .tooted {
@@ -2218,6 +2225,7 @@ span.price {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  object-fit: cover;
 }
 
 .contact-info {
@@ -2227,9 +2235,10 @@ span.price {
 .contact-info__left {
   background-color: #9d9fa0;
   width: 50%;
-  padding-top: 170px;
+  padding-top: 150px;
   font-size: 22px;
   font-family: "Josefin Sans", sans-serif;
+  padding-left: 17px;
 }
 .contact-info__right {
   width: 50%;
@@ -2237,7 +2246,7 @@ span.price {
 
 table {
   margin: 0 auto;
-  line-height: 160%;
+  line-height: 200%;
 }
 
 iframe {

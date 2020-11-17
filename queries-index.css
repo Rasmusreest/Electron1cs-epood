@@ -2,6 +2,10 @@
   .backg {
     display: none;
   }
+
+  #Halloween-sale {
+    object-fit: cover;
+  }
 }
 @media only screen and (max-width: 595px) {
   .topnav {
