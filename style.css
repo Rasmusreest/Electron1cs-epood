@@ -798,6 +798,23 @@ button:hover {
   color: white;
 }
 
+.button-center {
+  background-color: #0196fa;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  width: 21%;
+  position: absolute;
+  top: 80vh;
+  left: 40%;
+  margin-top: 20px;
+}
+
 .shopping-cart {
   width: 750px;
   height: 423px;
@@ -864,6 +881,7 @@ input:focus {
   margin: 10% 0;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  position: relative;
 }
 /* UUDISTE LEHT */
 .uudised__pealkiri {
